@@ -7,6 +7,7 @@
     @brief   Задан тремя точками. Позволяет вычислить радиусы вписанной и описанной окружностей.
 */
 class triangle {
+
 private:
     point A, B, C;  ///< вершины треугольника
 
@@ -18,14 +19,6 @@ private:
     */
     double sideLength(const point& P, const point& Q) const;
 
-    /**
-        @brief   проверяет, что точки образуют треугольник
-        @param   A первая вершина
-        @param   B вторая вершина
-        @param   C третья вершина
-        @throw   std::invalid_argument если треугольник вырожден
-    */
-    void validateTriangle(const point& A, const point& B, const point& C) const;
 
 public:
     /**
@@ -33,7 +26,6 @@ public:
         @param   A первая вершина
         @param   B вторая вершина
         @param   C третья вершина
-        @throw   std::invalid_argument если точки не образуют треугольник
     */
     triangle(const point& A, const point& B, const point& C);
 
