@@ -18,7 +18,7 @@ private:
          * @brief конструктор узла
          * @param value значение для хранения в узле
          */
-        Node(int value) : data(value), next(nullptr) {}
+        Node(const int value) : data(value), next(nullptr) {}
     };
 
     Node* top;       // @brief вершина стека
@@ -69,7 +69,7 @@ public:
      * @brief добавить элемент на вершину стека
      * @param value - значение для добавления
      */
-    void push(int value);
+    void push(const int value);
 
     /**
      * @brief извлечь элемент с вершины стека
