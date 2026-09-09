@@ -9,7 +9,7 @@ int main() {
     std::cout << "Введите количество преподавателей: ";
     std::cin >> count;
 
-    for (int i = 0; i < count; i++) {
+    for (size_t i = 0; i < count; i++) {
         std::cout << "\n--- Преподаватель " << i + 1 << " ---" << std::endl;
         teachers.push_back(Teacher::readFromStream());
     }
