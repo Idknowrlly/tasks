@@ -32,14 +32,14 @@ int main()
     std::cout << "   Размер: " << s1.getSize() << std::endl << std::endl;
 
     Stack s3;
-    for (int i = 1; i <= 10; i++)
+    for (size_t i = 1; i <= 10; i++)
     {
         s3.push(i);
     }
     std::cout << "5. Стек после добавления 1..10: " << s3.toString() << std::endl;
 
     std::cout << "   Извлекаем первые 5 элементов: ";
-    for (int i = 0; i < 5; i++)
+    for (size_t i = 0; i < 5; i++)
     {
         std::cout << s3.pop() << " ";
     }
