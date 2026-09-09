@@ -19,6 +19,14 @@ private:
     */
     double sideLength(const point& P, const point& Q) const;
 
+    /**
+        @brief   проверяет, что точки образуют треугольник
+        @param   A первая вершина
+        @param   B вторая вершина
+        @param   C третья вершина
+    */
+    void validateTriangle(const point& A, const point& B, const point& C) const;
+
 
 public:
     /**
