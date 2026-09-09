@@ -7,9 +7,10 @@ static bool isZero(double value) {
 }
 
 void triangle::validateTriangle(const point& A, const point& B, const point& C) const {
-    double crossLengthSquared = crossX * crossX + crossY * crossY + crossZ * crossZ;
-    double area = std::sqrt(crossLengthSquared) / 2.0;
-    if (isZero(area)) {
+    double a = sideLength(B, C);
+    double b = sideLength(A, C);
+    double c = sideLength(A, B);
+    if ((isZero(a+b)>isZero(c))|(isZero(c+b)>isZero(a))|(isZero(a+c)>isZero(b))) {
         std::cout << "Такого треугольника не существует" << std::endl;
         exit(1);
     }
