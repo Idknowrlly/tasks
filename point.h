@@ -25,18 +25,18 @@ public:
     */
     point(const double x1 = 0, const double y1 = 0, const double z1 = 0);
     /**
-     * @breif получить координату точки
-     * @return - координата x
+       @breif получить координату точки
+       @return - координата x
     */
     double x() const;
     /**
-     * @breif получить координату точки
-     * @return - координата y
+       @breif получить координату точки
+       @return - координата y
     */
     double y() const;
     /**
-     * @breif получить координату точки
-     * @return - координата z
+       @breif получить координату точки
+       @return - координата z
     */
     double z() const;
 };
