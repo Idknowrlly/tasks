@@ -8,7 +8,6 @@ Stack::Stack() : top(nullptr), count(0)
 Stack::Stack(const std::initializer_list<int>& list)
     : top(nullptr), count(0)
 {
-    // Сохраняем порядок: первый в списке будет внизу стека
     std::vector<int> temp(list);
     for (auto it = temp.rbegin(); it != temp.rend(); ++it)
     {
@@ -24,7 +23,6 @@ Stack::Stack(const Stack& other)
         return;
     }
 
-    // Восстанавливаем порядок элементов
     std::vector<int> temp;
     Node* current = other.top;
     while (current != nullptr)
@@ -133,7 +131,6 @@ std::string Stack::toString() const
     std::ostringstream oss;
     oss << "[";
 
-    // Собираем элементы для вывода от основания к вершине
     std::vector<int> temp;
     Node* current = top;
     while (current != nullptr)
